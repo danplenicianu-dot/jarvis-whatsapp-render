@@ -1,7 +1,7 @@
-// server.js - Jarvis Bilingual Fix (RO + EN)
+
+// server.js - Jarvis Bilingual Fix (RO + EN) - fără node-fetch
 import express from "express";
 import bodyParser from "body-parser";
-import fetch from "node-fetch";
 
 const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -58,5 +58,5 @@ app.post("/webhook", async (req, res) => {
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () =>
-  console.log(`✅ Jarvis bilingual fix running on ${PORT}`)
+  console.log(`✅ Jarvis bilingual running on ${PORT}`)
 );
